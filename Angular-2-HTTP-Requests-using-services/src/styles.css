@@ -1,0 +1,88 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+a:hover{    
+color:#33927b;
+}
+#remove:hover, #edit:hover{
+  color:#286090;
+  cursor: pointer;
+}
+form{
+    background-color: #ebeff2;
+    color: #2e3d50;
+    padding: 20px;
+    width: 720px;  
+}
+    #idName, #idEmail, #idPhone, #idStreet, #idSuite, #idCity, #idZipCode{
+    width: 620px;
+    height: 45px;
+  }
+  label{
+    margin-top: 20px; 
+  }
+#btnSave{
+    background-color: #2e3d50;
+    margin-top: 20px;
+    width: 80px; 
+    height: 40px;
+}
+  .pokeball {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  display: inline-block;
+  animation: rotate 1.5s linear infinite;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+}
+.pokeball .inner {
+  width: 150px;
+  height: 75px;
+  border: 48px solid #3498db;
+  box-sizing: border-box;
+}
+.pokeball .upper, .pokeball .lower {
+  width: 100%;
+  position: absolute;
+  height: calc(50% - 5px);
+  overflow: hidden;
+}
+.pokeball .upper {
+  top: 0;
+}
+.pokeball .upper .inner {
+  border-radius: 123px 123px 0 0;
+  border-bottom: 0;
+  margin-bottom: -5px;
+}
+.pokeball .lower {
+  bottom: 0;
+}
+.pokeball .lower .inner {
+  margin-top: -5px;
+  border-radius: 0 0 123px 123px;
+  border-top: 0;
+}
+.pokeball .middle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader {
+    margin-left: 600px;
+    margin-top: 100px;
+}

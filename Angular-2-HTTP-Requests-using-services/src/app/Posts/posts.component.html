@@ -1,0 +1,11 @@
+<div>
+  <loader [loading]="loading"></loader>
+</div>
+ 
+
+<div *ngIf="!loading">
+  <h2 [style.color]="'#2e3d50'" [style.margin-left]="'50px'">Posts</h2><br>
+      <div *ngFor="let item of arPosts" [style.margin-left]="'50px'" [style.font-size]="'15px'">
+        <div>{{item.title}}</div><br>
+      </div>      
+</div>
